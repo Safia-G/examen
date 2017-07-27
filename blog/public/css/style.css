@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Muli|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+
+body {
+  font-family: 'Inconsolata', monospace;
+  overflow: none;
+}
+.menu {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #B79793;
+  font-weight: lighter;
+  font-family: 'Lato', sans-serif;
+}
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-right: 250px;
+}
+
+.menu li {
+  list-style-type: none;
+  margin-left: 70px;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+.menu a:hover {
+  color: lightgrey;
+}
+h1 {
+  margin-left: 250px;
+  margin-top: 50px;
+}
+.first {
+  padding-top: 50px;
+  margin-left: 250px;
+}
+.p {
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 50px;
+  margin-left: 250px;
+  margin-right: 250px;
+  font-size: 15px;
+  text-align: justify;
+}
+.imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 48px;
+}
+
+.container {
+  font-size: 15px;
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+.btn-primary {
+  background-color: #f5f5f5;
+  color: black;
+  border-color: #ddd;
+}
+.cover {
+  height: 200px;
+  width: 150px;
+}
+table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+th {
+  background-color: #C0C0C0;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+td {
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  width: 10%;
+  padding: 10px;
+  border: 2px solid #C0C0C0;
+  font-size: 17px;
+}
+table, td {
+  background-color: lightgrey;
+}
+.book_list h1 {
+  margin-bottom: 40px;
+  font-variant: small-caps;
+}
+.panel-body form{
+  margin-left: 250px;
+  margin-right: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.supprimer, .modifier {
+  background-color: white;
+  border: none;
+  margin-bottom: 40px;
+  padding: 5px;
+  padding-top: 2px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 10px;
+}
+footer {
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+	background-color: #B79793;
+  margin-top: 50px;
+	color: white;
+	text-align: center;
+  padding-top: 25px;
+	padding-bottom: 20px;
+	bottom:0;
+	right:0;
+	left:0;
+}
