@@ -20,3 +20,5 @@ A l'heure actuelle, l'insertion, la modification et la suppression fonctionnent.
 
 Ma difficulté principale fut l'insertion, j'y ai passé pas mal de temps.
 J'avais aussi oublié de lier la BDD à laravel, pas pratique du coup pour la faire fonctionner ^^'
+
+Bonne vacance !! 
