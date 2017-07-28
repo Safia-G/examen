@@ -29,21 +29,26 @@ foreach ($products as $product) {
 };
 return view('products', ["products" => $value]);
 }
-public function addProduct() {
-  $customs = Custom::all();
-  $customsList = array();
-  foreach ($customs as $custom) {
-    $customsList[$custom->id] = $custom->taille;
+  public function addProduct() {
+    $customs = Custom::all();
+    $customsList = array();
+    foreach ($customs as $custom) {
+      $customsList[$custom->id] = $custom->taille;
+    }
+    return view('addProduct', ['customs' => $customsList]);
   }
-  return view('addProduct', ['customs' => $customsList]);
-}
 public function insertProduct(Request $request) {
-  // var_dump($request->custom);die;
+  #var_dump($request->custom);die;
   $store = $request->fichier->store('public/img');
   $store = str_replace("public", "storage", $store);
   $product = new Product;
   $product->modele = $request->modele;
-  $product->custom = $request->custom;
+  $customs = Custom::all();
+  $customsList = array();
+  foreach ($customs as $custom) {
+    $customsList[$custom->id] = $request->customs;
+  }
+  $product->custom = $custom->taille;
   $product->fichier = $store;
   $product->save();
   return redirect('/products');

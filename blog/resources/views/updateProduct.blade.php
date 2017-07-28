@@ -11,8 +11,6 @@
     {{ Form::label('custom', 'Modifier taille :') }}
     {{ Form::select('custom', [$customs]) }}
     {{ Form::hidden('id', $id) }}
-    {{ Form::label('L\'image à modifier') }}
-    {{ Form::file('fichier') }}
     {{ Form::submit('Modifier!') }}
     {{ Form::close() }}
   </div>
