@@ -17,10 +17,14 @@ Route::get('/', function () {
 
 Route::get('/products', 'ProductsController@index');
 Route::get('/addProduct', 'ProductsController@addProduct');
+Route::post('/insert/product', 'ProductsController@insertProduct');
+Route::post('/delete/product', 'ProductsController@deleteProduct');
+Route::post('/update/product', 'ProductsController@updateProduct');
+Route::post('/update/product/action', 'ProductsController@updateProductAction');
 
 
-Route::get('/add/custom', 'CustomController@addCustom');
-Route::post('/insert/custom', 'CustomController@insertCustom');
+
+Route::get('/contact', 'ContactController@index');
 
 
 

@@ -8,7 +8,7 @@
 
       <table>
         <tr>
-          <th>TShirt</th>
+          <th>Couleur</th>
           <th>Taille</th>
           <th>Image selectionnée</th>
           <th>Modifier/Supprimer</th>

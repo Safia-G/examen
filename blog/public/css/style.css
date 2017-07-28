@@ -33,7 +33,7 @@ body {
 .menu a:hover {
   color: lightgrey;
 }
-h1 {
+.title h1 {
   margin-left: 250px;
   margin-top: 50px;
 }
@@ -69,9 +69,9 @@ h1 {
   color: black;
   border-color: #ddd;
 }
-.cover {
-  height: 200px;
-  width: 150px;
+.fichier {
+  height: 100px;
+  width: 100px;
 }
 table {
   display: flex;
@@ -83,6 +83,7 @@ table {
   margin-right: 250px;
 }
 th {
+  font-family: 'Lato', sans-serif;
   background-color: #C0C0C0;
   font-size: 20px;
   padding: 10px;
@@ -90,12 +91,12 @@ th {
   color: white;
 }
 td {
-  font-family: 'Lato', sans-serif;
   font-weight: bolder;
   width: 10%;
   padding: 10px;
   border: 2px solid #C0C0C0;
-  font-size: 17px;
+  font-size: 20px;
+  color: gray;
 }
 table, td {
   background-color: lightgrey;
@@ -104,12 +105,21 @@ table, td {
   margin-bottom: 40px;
   font-variant: small-caps;
 }
-.panel-body form{
+.panel-body form {
   margin-left: 250px;
   margin-right: 250px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+.panel-body label {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.panel-body{
+  margin-top: 50px;
 }
 .supprimer, .modifier {
   background-color: white;
@@ -118,8 +128,27 @@ table, td {
   padding: 5px;
   padding-top: 2px;
   padding-right: 30px;
+  margin-top: 20px;
   padding-left: 30px;
   border-radius: 10px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+
+}
+.jumbotron {
+background: #358CCE;
+color: #FFF;
+border-radius: 0px;
+}
+.jumbotron-sm {
+padding-top: 14px;
+padding-bottom: 14px;
+}
+.jumbotron small {
+color: #FFF;
+}
+.h1 small {
+font-size: 24px;
 }
 footer {
   font-family: 'Lato', sans-serif;

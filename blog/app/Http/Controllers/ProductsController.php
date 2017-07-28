@@ -23,7 +23,7 @@ foreach ($products as $product) {
 );
   foreach ($product->customs as $custom)
   {
-    array_push($value[$i]["custom"], $custom->color);
+    array_push($value[$i]["custom"], $custom->taille);
   };
   $i ++;
 };
@@ -33,9 +33,9 @@ public function addProduct() {
   $customs = Custom::all();
   $customsList = array();
   foreach ($customs as $custom) {
-    $customsList[$custom->id] = $custom->color;
+    $customsList[$custom->id] = $custom->taille;
   }
-    return view('addProduct', ['customs' => $customsList]);
+  return view('addProduct', ['customs' => $customsList]);
 }
 public function insertProduct(Request $request) {
   // var_dump($request->custom);die;
@@ -43,9 +43,9 @@ public function insertProduct(Request $request) {
   $store = str_replace("public", "storage", $store);
   $product = new Product;
   $product->modele = $request->modele;
+  $product->custom = $request->custom;
   $product->fichier = $store;
   $product->save();
-  $product->customs()->attach($request->custom);
   return redirect('/products');
 }
 public function deleteProduct(Request $request) {
@@ -59,8 +59,9 @@ public function updateProduct(Request $request) {
   $customs = Custom::all();
   $customsList = array();
   foreach ($customs as $custom) {
-    $customsList[$custom->id] = $custom->color;
+    $customsList[$custom->id] = $custom->taille;
   }
+
   return view('updateProduct', ['modele' => $product->modele, 'customs' => $customsList, 'id' => $product->id]);
 }
 public function updateProductAction(Request $request) {

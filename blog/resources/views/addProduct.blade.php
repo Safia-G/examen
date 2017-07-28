@@ -6,11 +6,11 @@
 
   <div class="panel-body">
     {{ Form::open(['url' => '/insert/product', 'files' => true]) }}
-    {{ Form::label('name', 'Choix couleur') }}
-    {{ Form::text('name') }}
-    {{ Form::label('taille', 'Taille') }}
-    {{ Form::select('taille[]', array('multiple' => 'S', 'M', 'L', 'XL')) }}
-    {{ Form::label('Image que vous souhaitez insérer') }}
+    {{ Form::label('modele', 'Choisissez une couleur :') }}
+    {{ Form::text('modele') }}
+    {{ Form::label('custom', 'Quelle est votre taille ?') }}
+    {{ Form::select('custom', [$customs]) }}
+    {{ Form::label('L\'image que vous souhaitez insérer') }}
     {{ Form::file('fichier') }}
     {{ Form::submit('Inserer!') }}
     {{ Form::close() }}
